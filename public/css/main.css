@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  color: inherit; }
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #2c3e50;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: 300; }
+
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* Reset `button` and button-style `input` default styles */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  /* cursor: default; */
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button;
+  /* for input */
+  -webkit-user-select: none;
+  /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none; }
+
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* Make `a` like a button */
+[role="button"] {
+  color: inherit;
+  cursor: default;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  white-space: pre;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+
+#header {
+  width: 100%;
+  line-height: 50px;
+  border-bottom: 1px solid #ecf0f1;
+  padding: 0 20px; }
+
+.button {
+  padding: 10px 20px;
+  line-height: 25px;
+  border-radius: 3px;
+  background: #fff;
+  text-decoration: none;
+  border: 1px solid #34495e;
+  font-size: 0.8em;
+  display: inline-block;
+  font-weight: 400;
+  margin-right: 10px; }
+  .button:last-child {
+    margin-right: 0; }
+  .button:hover {
+    background: #34495e;
+    color: #fff; }
+  .button.button-submit {
+    background: #fff;
+    border: 1px solid #1abc9c;
+    color: #1abc9c; }
+    .button.button-submit:hover {
+      background: #1abc9c;
+      color: #fff; }
+
+#main .wrapper {
+  padding: 10px;
+  width: 100%; }
+
+#actions {
+  width: 100%;
+  line-height: 80px;
+  border-bottom: 1px solid #ecf0f1;
+  padding: 0 20px; }
+
+.student {
+  border: 1px solid #ecf0f1;
+  border-radius: 4px;
+  padding: 20px;
+  float: left;
+  width: calc(25% - 20px);
+  margin: 10px; }
+
+.form {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 1px solid #ecf0f1;
+  width: calc(100% - 20px); }
+  .form input {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 300; }
+  .form .item-form {
+    width: 100%;
+    margin: 10px 0px; }
+  .form .item-text {
+    border-radius: 4px;
+    background: #ecf0f1; }
+    .form .item-text input {
+      width: 100%;
+      border: none;
+      background: transparent;
+      padding: 10px 20px; }
+
+.alert {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 20px; }
+  .alert.success {
+    background: #2ecc71;
+    color: #fff; }
